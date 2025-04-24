@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>APPSC OTPR Registration</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      section.style.display = section.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>APPSC - New OTPR Registration</h1>
+  </header>
+
+  <main>
+      <!-- Basic Details -->
+      <section class="basic-details">
+        <h2 onclick="toggleSection('basicDetailsContent')" class="collapsible">▼ Basic Details</h2>
+        <div id="basicDetailsContent" class="content">
+          <div class="form-row">
+            <label>Name as per SSC/Birth Certificate *</label>
+            <input type="text" placeholder="Enter Name as per SSC/Birth Certificate" required />
+          </div>
+          <div class="form-row">
+            <label>Date of Birth as per SSC/Birth Certificate *</label>
+            <input type="date" placeholder="Enter Date of Birth" required />
+          </div>
+          <div class="form-row">
+            <label>Gender *</label>
+            <label><input type="radio" name="gender" value="male" required /> Male</label>
+            <label><input type="radio" name="gender" value="female" /> Female</label>
+            <label><input type="radio" name="gender" value="transgender" /> Transgender</label>
+          </div>
+      
+          <p class="note">Note *: The particulars furnished by the applicants in this OTPR form will be taken as final and the data is processed based on these particulars only.</p>
+      
+          <h3>Birth Place Details</h3>
+          <div class="grid">
+            <div class="form-row">
+              <label>District *</label>
+              <select required><option>--Select--</option></select>
+            </div>
+            <div class="form-row">
+              <label>Mandal *</label>
+              <select required><option>--Select--</option></select>
+            </div>
+            <div class="form-row">
+              <label>Village *</label>
+              <input type="text" placeholder="Enter Village" required />
+            </div>
+      
+            <div class="form-row">
+              <label>Community *</label>
+              <select required><option>--Select--</option></select>
+            </div>
+            <div class="form-row">
+              <label>Father's Name *</label>
+              <input type="text" placeholder="Enter Father's Name" required />
+            </div>
+            <div class="form-row">
+              <label>Mother's Name *</label>
+              <input type="text" placeholder="Enter Mother's Name" required />
+            </div>
+      
+            <div class="form-row">
+              <label>Mother Tongue *</label>
+              <select required><option>--Select--</option></select>
+            </div>
+            <div class="form-row">
+              <label>Religion *</label>
+              <select required><option>--Select--</option></select>
+            </div>
+      
+            <div class="form-row">
+              <label>Identification Marks 1 *</label>
+              <input type="text" placeholder="Enter Identification Marks 1" required />
+            </div>
+            <div class="form-row">
+              <label>Identification Marks 2 *</label>
+              <input type="text" placeholder="Enter Identification Marks 2" />
+            </div>
+            <div class="form-row">
+              <label>E-Mail ID *</label>
+              <input type="email" placeholder="Enter E-Mail ID" required />
+            </div>
+            <div class="form-row">
+              <label>Mobile No. *</label>
+              <input type="tel" placeholder="Enter Mobile No." required />
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Education Section -->
+      <section class="edu-section">
+        <h2 onclick="toggleSection('educationContent')" class="collapsible">▼ Education Details</h2>
+        <div id="educationContent" class="content" style="display: none;">
+        <div class="grid">
+            <div class="form-row">
+            <label>X Class Board</label>
+            <input type="text" placeholder="Enter Board" />
+            </div>
+            <div class="form-row">
+            <label>School Name</label>
+            <input type="text" placeholder="Enter School Name" />
+            </div>
+            <div class="form-row">
+            <label>Hall Ticket No</label>
+            <input type="text" placeholder="Enter Hall Ticket Number" />
+            </div>
+            <div class="form-row">
+            <label>Passing Month & Year</label>
+            <input type="month" />
+            </div>
+            <div class="form-row">
+            <label>Percentage</label>
+            <input type="text" placeholder="Enter Percentage" />
+            </div>
+        </div>
+        </div>
+      </section>
+    
+      <!-- Higher Education -->
+      <section class="edu-section">
+        <h2 onclick="toggleSection('higherEducationContent')" class="collapsible">▼ Higher Education</h2>
+        <div id="higherEducationContent" class="content" style="display: none;">
+        <div class="grid">
+            <div class="form-row">
+            <label>Course</label>
+            <input type="text" placeholder="Enter Course" />
+            </div>
+            <div class="form-row">
+            <label>University</label>
+            <input type="text" placeholder="Enter University Name" />
+            </div>
+            <div class="form-row">
+            <label>College Name</label>
+            <input type="text" placeholder="Enter College Name" />
+            </div>
+            <div class="form-row">
+            <label>Percentage</label>
+            <input type="text" placeholder="Enter Percentage" />
+            </div>
+            <div class="form-row">
+            <label>Month & Year</label>
+            <input type="month" />
+            </div>
+        </div>
+        </div>
+      </section>
+    
+    <!-- Additional Qualification -->
+    <section class="edu-section">
+        <h2 onclick="toggleSection('additionalContent')" class="collapsible">▼ Additional Qualification</h2>
+        <div id="additionalContent" class="content" style="display: none;">
+        <div class="grid">
+            <div class="form-row">
+            <label>M.Phil / Ph.D. Subject</label>
+            <input type="text" placeholder="Enter Subject" />
+            </div>
+            <div class="form-row">
+            <label>College/University</label>
+            <input type="text" placeholder="Enter College/University" />
+            </div>
+            <div class="form-row">
+            <label>Specialization</label>
+            <input type="text" placeholder="Enter Specialization" />
+            </div>
+            <div class="form-row">
+            <label>Date Acquired</label>
+            <input type="date" />
+            </div>
+        </div>
+        </div>
+    </section>
+  
+      <section class="other-details">
+        <h2 onclick="toggleSection('otherDetailsContent')" class="collapsible">▼ Other Details</h2>
+        <div id="otherDetailsContent" class="content">
+          <div class="form-group">
+            <label>Are you Differently Abled Person? *</label>
+            <br/>
+            <label><input type="radio" name="differentlyAbled" value="yes" required /> Yes</label>
+            <label><input type="radio" name="differentlyAbled" value="no" /> No</label>
+          </div>
+      
+          <div class="form-group">
+            <label>Are you an Ex-service Person? *</label>
+            <br/>
+            <label><input type="radio" name="exService" value="yes" required /> Yes</label>
+            <label><input type="radio" name="exService" value="no" /> No</label>
+          </div>
+      
+          <div class="form-group">
+            <label>Are you retrenched temporary employee in State Census Department? *</label>
+            <br/>
+            <label><input type="radio" name="retCensus" value="yes" required /> Yes</label>
+            <label><input type="radio" name="retCensus" value="no" /> No</label>
+          </div>
+      
+          <div class="form-group">
+            <label>Have you worked as Instructor in NCC? *</label>
+            <br/>
+            <label><input type="radio" name="nccInstructor" value="yes" required /> Yes</label>
+            <label><input type="radio" name="nccInstructor" value="no" /> No</label>
+          </div>
+      
+          <div class="form-group employment-group">
+            <div>
+              <label>Are you Employed? *</label>
+              <br/>
+              <label><input type="radio" name="employed" value="yes" required /> Yes</label>
+              <label><input type="radio" name="employed" value="no" /> No</label>
+            </div>
+            <div>
+              <label for="employmentNature">Nature of the Employment *</label>
+              <select id="employmentNature" required>
+                <option value="">--Select--</option>
+                <option value="govt">Government</option>
+                <option value="private">Private</option>
+                <option value="contract">Contract</option>
+              </select>
+            </div>
+          </div>
+      
+          <div class="form-group">
+            <label>Are you an Ex-Employee in Government? *</label>
+            <br/>
+            <label><input type="radio" name="exGovt" value="yes" required /> Yes</label>
+            <label><input type="radio" name="exGovt" value="no" /> No</label>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Declaration -->
+      <section>
+        <label><input type="checkbox" required /> I accept the above declaration.</label>
+      </section>
+
+      <button type="submit">Submit</button>
+    <!-- </form> -->
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Andhra Pradesh Public Service Commission</p>
+  </footer>
+</body>
+</html>

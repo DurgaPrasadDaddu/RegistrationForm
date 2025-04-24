@@ -1,0 +1,159 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  h2 {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  h2:hover {
+    background-color: #45a049;
+  }
+  
+  .content {
+    display: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffdd;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  
+  .form-row {
+    margin-bottom: 15px;
+  }
+  
+  .form-row label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .form-row input,
+  .form-row select {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-row input[type="radio"] {
+    width: auto;
+  }
+  
+  .form-row select {
+    cursor: pointer;
+  }
+  
+  .note {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  .form-group label{
+    gap:40px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .grid .form-row {
+    margin-bottom: 10px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  footer p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    button[type="submit"] {
+      font-size: 1rem;
+      padding: 12px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .form-row label {
+      font-size: 0.9rem;
+    }
+  
+    button[type="submit"] {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  }
+  
+  
